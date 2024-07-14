@@ -10,8 +10,8 @@ public class StartPage {
     private static final String BUY_BUTTON_TEXT = "Купить";
     private static final String BUY_CREDIT_BUTTON_TEXT = "Купить в кредит";
 
-    private SelenideElement paymentButton = $(byText(BUY_BUTTON_TEXT));
-    private SelenideElement creditButton = $(byText(BUY_CREDIT_BUTTON_TEXT));
+    private final SelenideElement paymentButton = $(byText(BUY_BUTTON_TEXT));
+    private final SelenideElement creditButton = $(byText(BUY_CREDIT_BUTTON_TEXT));
 
     public PaymentPage navigateToPaymentPage() {
         paymentButton.click();

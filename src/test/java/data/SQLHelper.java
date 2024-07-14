@@ -9,10 +9,10 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class SQLHelper {
-    private static QueryRunner runner = new QueryRunner();
-    private static String url = System.getProperty("db.url");
-    private static String user = System.getProperty("db.user");
-    private static String password = System.getProperty("db.password");
+    private static final QueryRunner runner = new QueryRunner();
+    private static final String url = System.getProperty("db.url");
+    private static final String user = System.getProperty("db.user");
+    private static final String password = System.getProperty("db.password");
 
     @SneakyThrows
     public static void cleanDatabase() {
